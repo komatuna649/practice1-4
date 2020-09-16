@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>javascript</title>
+    <meta name="description" content="site">
+
+</head>
+課題１－4
+ご確認よろしくお願いします。
+
+<script>
+'use strict';
+
+const info = {
+ 
+ jenre : ['[ジャンル]掃除', '[ジャンル]買い物', '[ジャンル]運動' ],
+ content :  [ '[内容]机を片付ける', '[内容]牛乳を買う', '[内容]散歩する' ],
+ getInfo : function() {
+    console.log(this.content[0] + ',' + this.jenre[0] ) ,
+    console.log(this.content[1] + ',' + this.jenre[1] ) ,
+    console.log(this.content[2] + ',' + this.jenre[2] ) ,
+    console.log(this.content[3] + ',' + this.jenre[3] )    
+    }
+}
+info.getInfo();
+
+ const task = prompt("タスクを入力してください");
+  info.content.push('[内容]' + task);
+ const jenre = prompt("ジャンルを入力してください");
+  info.jenre.push('[ジャンル]' + jenre);
+ 
+   info.getInfo();
+   
+  alert("新しいタスクを追加しました。");
+
+  window.prompt("確認、追加、削除、終了のいずれかを選択してください。");
+
+</script>
+</body>
+</html>
