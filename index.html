@@ -1,46 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>javascript</title>
   <meta name="description" content="site">
-
 </head>
 課題１－4
 ご確認よろしくお願いします。
-
 <script>
-
-
   'use strict';
-
   const info = [
-
-    { content: '[内容]机を片付ける', jenre: '[ジャンル]掃除' },
-    { content: '[内容]牛乳を買う', jenre: '[ジャンル]買い物' },
-    { content: '[内容]散歩する', jenre: '[ジャンル]運動' }
+    { content: '[内容]机を片付ける', genre: '[ジャンル]掃除' },
+    { content: '[内容]牛乳を買う', genre: '[ジャンル]買い物' },
+    { content: '[内容]散歩する', genre: '[ジャンル]運動' }
   ];
-
   function getInfo() {
-
     for (let i = 0; i < info.length; i++) {
-      console.log([i] + ':' + info[i].content + ',' + info[i].jenre);
+      console.log([i] + ':' + info[i].content + ',' + info[i].genre);
     }
   }
   getInfo();
-
-  const task = prompt("タスクを入力してください");
-  const jenre = prompt("ジャンルを入力してください");
-  info.push({ content: '[内容]' + task, jenre: '[ジャンル]' + jenre });
+  const task = prompt('タスクを入力してください');
+  const genre = prompt('ジャンルを入力してください');
+  info.push({ content: '[内容]' + task, genre: '[ジャンル]' + genre });
   getInfo();
-
-  alert("新しいタスクを追加しました。");
-
-  window.prompt("確認、追加、削除、終了のいずれかを選択してください。");
-
+  alert('新しいタスクを追加しました。');
+  window.prompt('確認、追加、削除、終了のいずれかを選択してください。');
 </script>
 </body>
-
 </html>
